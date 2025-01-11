@@ -1,11 +1,11 @@
 # ASM3 example configuration file
 
 # The base URL to the ASM installation as seen by the client (should not end with /)
-base_url = http://localhost:5000
+base_url = http://localhost:5002/asm3
 
 # The URL to asm's service endpoint to be shown in online forms screen
 # (typically base_url + /service)
-service_url = http://localhost:5000/service
+service_url = http://localhost:5002/asm3/service
 
 # The language to use before a locale has been configured in the database
 locale = en
@@ -60,7 +60,7 @@ session_debug = false
 # The host/port that memcached is running on if it is to be used.
 # If memcache is not available, an in memory dictionary will be
 # used instead.
-memcached_server = 127.0.0.1:11211
+memcached_server = memcached:11211
 
 # Where to store media files.
 # database - media files are base64 encoded in the dbfs.content db column
